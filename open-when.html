@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Öffne, wenn... · Our Little World</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="page-noise"></div>
+		<header class="topbar">
+			<a class="brand" href="index.html">
+				<span class="brand-mark">J</span>
+				<span>our little world</span>
+			</a>
+			<nav class="page-nav">
+				<a href="index.html">← Karte</a>
+				<span>·</span>
+				<a href="memories.html">nächster Ort →</a>
+			</nav>
+		</header>
+
+		<main class="inner-page">
+			<section class="section-shell page-intro">
+				<a class="page-back" href="index.html">← zurück zur Karte</a>
+				<p class="eyebrow">station 01 · ein kleiner Brief</p>
+				<h1>Öffne, wenn...<br /><em>du mich brauchst.</em></h1>
+				<p>Weil du so gut in Mathe bist: Löse erst die Matheaufgabe, um den Brief zu öffnen.</p>
+			</section>
+
+			<section class="section-shell section-tinted page-content">
+				<div class="letter-grid">
+					<button class="letter-card envelope-card reveal" data-letter="miss">
+						<span class="wax-seal">J</span>
+						<span class="letter-title">Öffne mich, wenn du mich vermisst</span>
+						<span class="letter-lock">verschlossen · zum Öffnen lösen</span>
+					</button>
+					<button class="letter-card envelope-card reveal" data-letter="homesick">
+						<span class="wax-seal">J</span>
+						<span class="letter-title">Öffne mich, wenn du Heimweh hast</span>
+						<span class="letter-lock">verschlossen · zum Öffnen lösen</span>
+					</button>
+					<button class="letter-card envelope-card reveal" data-letter="alone">
+						<span class="wax-seal">J</span>
+						<span class="letter-title">Öffne mich, wenn du dich alleine fühlst</span>
+						<span class="letter-lock">verschlossen · zum Öffnen lösen</span>
+					</button>
+					<button class="letter-card envelope-card reveal" data-letter="loved">
+						<span class="wax-seal">J</span>
+						<span class="letter-title">Öffne mich, wenn du vergessen hast, wie sehr du geliebt wirst</span>
+						<span class="letter-lock">verschlossen · zum Öffnen lösen</span>
+					</button>
+					<button class="letter-card envelope-card reveal" data-letter="bad-day">
+						<span class="wax-seal">J</span>
+						<span class="letter-title">Öffne mich, wenn du einen richtig schlechten Tag hast</span>
+						<span class="letter-lock">verschlossen · zum Öffnen lösen</span>
+					</button>
+					<button class="letter-card envelope-card reveal" data-letter="give-up">
+						<span class="wax-seal">J</span>
+						<span class="letter-title">Öffne mich, wenn du aufgeben möchtest</span>
+						<span class="letter-lock">verschlossen · zum Öffnen lösen</span>
+					</button>
+					<button class="letter-card envelope-card reveal" data-letter="overthink">
+						<span class="wax-seal">J</span>
+						<span class="letter-title">Öffne mich, wenn du zu viel nachdenkst</span>
+						<span class="letter-lock">verschlossen · zum Öffnen lösen</span>
+					</button>
+					<button class="letter-card envelope-card reveal" data-letter="motivation">
+						<span class="wax-seal">J</span>
+						<span class="letter-title">Öffne mich, wenn du Motivation brauchst</span>
+						<span class="letter-lock">verschlossen · zum Öffnen lösen</span>
+					</button>
+					<button class="letter-card envelope-card reveal" data-letter="laugh">
+						<span class="wax-seal">J</span>
+						<span class="letter-title">Öffne mich, wenn du lachen musst</span>
+						<span class="letter-lock">verschlossen · zum Öffnen lösen</span>
+					</button>
+					<button class="letter-card envelope-card reveal" data-letter="chaos">
+						<span class="wax-seal">J</span>
+						<span class="letter-title">Öffne mich, wenn du unser Chaos vermisst</span>
+						<span class="letter-lock">verschlossen · zum Öffnen lösen</span>
+					</button>
+					<button class="letter-card envelope-card reveal" data-letter="happy">
+						<span class="wax-seal">J</span>
+						<span class="letter-title">Öffne mich, wenn etwas richtig Schönes passiert ist</span>
+						<span class="letter-lock">verschlossen · zum Öffnen lösen</span>
+					</button>
+					<button class="letter-card envelope-card reveal" data-letter="home">
+						<span class="wax-seal">J</span>
+						<span class="letter-title">Öffne mich, wenn du wieder zu Hause bist</span>
+						<span class="letter-lock">verschlossen · zum Öffnen lösen</span>
+					</button>
+				</div>
+				<p class="page-note">zwölf Umschläge, eine Freundschaft für immer ♡</p>
+			</section>
+		</main>
+
+		<footer>
+			<span>für meine Lieblingsperson, mit Liebe</span>
+			<span>01 / 09</span>
+		</footer>
+
+		<div class="modal" id="modal" aria-hidden="true">
+			<div class="modal-card">
+				<button class="modal-close" aria-label="Schließen">×</button>
+				<p class="eyebrow">ein kleines Rätsel</p>
+				<h2>Bevor du diesen Brief öffnest...</h2>
+				<p>Löse die Aufgabe.</p>
+				<div class="lock-equation">
+					2 + 2 = <input id="answer" type="number" aria-label="Antwort auf die Gleichung" />
+				</div>
+				<button class="primary-button" id="unlock">Brief öffnen</button>
+				<p class="unlock-message" id="unlock-message"></p>
+			</div>
+		</div>
+
+		<script src="app.js"></script>
+	</body>
+</html>

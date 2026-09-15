@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f1e9" />
+    <title>Our Little World</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="home-page">
+    <div class="page-noise"></div>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Back to home"><span class="brand-mark">J</span><span>our little world</span></a>
+      <div class="topbar-note">a tiny place for us <span>✦</span></div>
+      <button class="menu-toggle" aria-label="Open navigation">☰</button>
+    </header>
+
+    <main>
+      <section class="hero section-shell" id="home">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">for julia, wherever you are</p>
+          <h1>6 months away,<br /><em>but never far from home.</em></h1>
+          <p class="hero-text">Falls du gerade Heimweh hast, mich vermisst oder einfach wissen willst, wie sehr du geliebt wirst – du bist hier richtig.</p>
+          <a class="primary-button" href="#map">Enter our little world <span>♡</span></a>
+          <p class="hand-note">made with too much love<br />& a little bit of chaos</p>
+        </div>
+        <div class="hero-polaroid reveal reveal-delay">
+          <div class="photo-frame"><img src="media/images/startseite.jpeg" alt="Julia und Ajla" /><span class="photo-stamp">our favourite people</span></div>
+          <p>same sky, different places</p>
+        </div>
+        <div class="hero-scribble">always<br />here <span>↘</span></div>
+      </section>
+
+      <section class="map-section section-shell" id="map">
+        <div class="section-heading reveal"><p class="eyebrow">unsere freundschaftskarte</p><h2>Our Little World</h2><p>Neun kleine Orte, die dich ein Stück Zuhause finden lassen.</p></div>
+        <div class="journey-map">
+          <div class="map-line"></div>
+          <a class="map-stop active" href="open-when.html"><span class="stop-number">01</span><span>Öffne,<br />wenn...</span><i>✉</i></a>
+          <a class="map-stop" href="memories.html"><span class="stop-number">02</span><span>Unsere<br />Erinnerungen</span><i>✦</i></a>
+          <a class="map-stop" href="formula.html"><span class="stop-number">03</span><span>Die Formel<br />von dir</span><i>∑</i></a>
+          <a class="map-stop" href="soundtrack.html"><span class="stop-number">04</span><span>Unser<br />Soundtrack</span><i>♫</i></a>
+          <a class="map-stop" href="diary.html"><span class="stop-number">05</span><span>Unser digitales<br />Tagebuch</span><i>◌</i></a>
+          <a class="map-stop" href="quiz.html"><span class="stop-number">06</span><span>Kennst<br />du uns?</span><i>?</i></a>
+          <a class="map-stop" href="puzzle.html"><span class="stop-number">07</span><span>Setz uns<br />zusammen</span><i>▧</i></a>
+          <a class="map-stop" href="countdown.html"><span class="stop-number">08</span><span style="min-height:42px;display:flex;align-items:center;justify-content:center">Countdown</span><i>⌁</i></a>
+        </div>
+      </section>
+
+      <section class="letters section-shell section-tinted" id="letters">
+        <div class="section-heading reveal"><p class="eyebrow">open when...</p><h2>Little letters,<br /><em>for big feelings.</em></h2><p>Somewhere in the world, there is always a letter waiting for you.</p></div>
+        <div class="letter-grid">
+          <button class="letter-card reveal" data-letter="miss"><span class="wax-seal">J</span><span class="letter-title">Open when<br />you miss me</span><span class="letter-lock">locked · solve to open</span></button>
+          <button class="letter-card tilt-right reveal reveal-delay" data-letter="bad-day"><span class="wax-seal">J</span><span class="letter-title">Open when<br />you’re having a bad day</span><span class="letter-lock">locked · solve to open</span></button>
+          <button class="letter-card tilt-left reveal" data-letter="motivation"><span class="wax-seal">J</span><span class="letter-title">Open when<br />you need motivation</span><span class="letter-lock">locked · solve to open</span></button>
+          <button class="letter-card reveal reveal-delay" data-letter="sleep"><span class="wax-seal">J</span><span class="letter-title">Open when<br />you can’t sleep</span><span class="letter-lock">locked · solve to open</span></button>
+        </div>
+      </section>
+
+      <section class="memories section-shell" id="memories">
+        <div class="section-heading inline-heading reveal"><div><p class="eyebrow">the archive</p><h2>Our Memories</h2></div><button class="outline-button" id="random-memory">🎲 random memory</button></div>
+        <div class="memory-wall" id="memory-wall">
+          <article class="memory-card memory-a reveal"><div class="polaroid-image"><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=700&q=85" alt="Friends outside" /></div><p class="memory-date">summer / 2022</p><h3>The beginning of everything</h3><p>We didn’t know then that this would become our favourite kind of normal.</p></article>
+          <article class="memory-card memory-b reveal reveal-delay"><div class="polaroid-image"><img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=700&q=85" alt="Friends at a party" /></div><p class="memory-date">some tuesday</p><h3>Just one quick coffee</h3><p>Three hours, four side quests and absolutely no regrets.</p></article>
+          <article class="memory-card memory-c reveal"><div class="polaroid-image"><img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=700&q=85" alt="Friends celebrating" /></div><p class="memory-date">the good days</p><h3>Us against the world</h3><p>Proof that the best plans are usually the ones we almost cancel.</p></article>
+        </div>
+        <div class="category-row"><button class="category active">all memories</button><button class="category">adventures</button><button class="category">everyday magic</button><button class="category">chaos</button></div>
+      </section>
+
+      <section class="formula section-shell section-dark" id="formula">
+        <div class="section-heading reveal"><p class="eyebrow">a scientific observation</p><h2>The Formula<br /><em>of You</em></h2></div>
+        <div class="equation reveal"><span>YOU</span><b>=</b><button data-factor="Attention">A</button><b>+</b><button data-factor="Humour">H</button><b>+</b><button data-factor="Chaos">K<sup>2</sup></button><b>+</b><button data-factor="Trust">T</button><b>+</b><button data-factor="Love">L<sup>∞</sup></button></div>
+        <p class="formula-hint">click a variable to reveal a reason</p><div class="factor-message" id="factor-message">Every good formula needs a little mystery.</div>
+      </section>
+
+      <section class="soundtrack section-shell" id="soundtrack">
+        <div class="mixtape reveal"><div class="mixtape-label"><p class="eyebrow">side a · side b</p><h2>Our<br /><em>Soundtrack</em></h2><p>songs that feel like us</p></div><div class="disc"><div class="disc-hole"></div></div></div>
+        <div class="track-list reveal reveal-delay"><div class="track active-track"><span>01</span><span class="play-icon">▶</span><div><strong>our song placeholder</strong><small>the one we always come back to</small></div><span>03:42</span></div><div class="track"><span>02</span><span class="play-icon">▶</span><div><strong>main character energy</strong><small>for the train rides and late nights</small></div><span>04:16</span></div><div class="track"><span>03</span><span class="play-icon">▶</span><div><strong>we'll be okay</strong><small>save this one for a homesick day</small></div><span>03:58</span></div><div class="track"><span>04</span><span class="play-icon">▶</span><div><strong>chaos, but make it cute</strong><small>self explanatory</small></div><span>02:51</span></div></div>
+      </section>
+
+      <section class="diary section-shell section-tinted" id="diary"><div class="section-heading reveal"><p class="eyebrow">notes from both sides</p><h2>While You Were Away...</h2><p>A shared diary for the tiny moments that deserve to be remembered.</p></div><div class="timeline"><article class="diary-entry reveal"><div class="entry-dot"></div><div class="entry-meta">AJLA · 03 SEPT 2024</div><h3>Today I saw your favourite colour in the sky.</h3><p>It was one of those soft pink sunsets you would have taken 47 photos of. I took one for you.</p><div class="entry-image"><img src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=800&q=85" alt="Soft pink sunset" /></div></article><article class="diary-entry reveal reveal-delay"><div class="entry-dot"></div><div class="entry-meta">JULIA · 11 SEPT 2024</div><h3>First week survived ✈</h3><p>Found a tiny cafe that plays our kind of music. Still collecting stories for when I get home.</p><div class="entry-image"><img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=85" alt="Cozy cafe" /></div></article></div><button class="outline-button center-button">+ add a little moment</button></section>
+
+      <section class="quiz section-shell" id="quiz"><div class="quiz-box reveal"><p class="eyebrow">the unofficial friendship exam</p><h2>How well do you<br /><em>know us?</em></h2><div class="quiz-question" id="quiz-question"><p>We say “let’s just quickly...”<br /><strong>What happens next?</strong></p><div class="answers"><button data-correct="false">We are home in 10 minutes.</button><button data-correct="true">A three-hour side quest begins.</button><button data-correct="false">We follow the original plan.</button></div></div><div class="quiz-result" id="quiz-result"></div></div></section>
+
+      <section class="puzzle section-shell section-dark" id="puzzle"><div class="section-heading reveal"><p class="eyebrow">a tiny game for two</p><h2>Put Us<br /><em>Back Together</em></h2><p>12 pieces · 1 friendship · ∞ memories</p></div><div class="puzzle-board" id="puzzle-board"><div class="puzzle-piece piece-1"></div><div class="puzzle-piece piece-2"></div><div class="puzzle-piece piece-3"></div><div class="puzzle-piece piece-4"></div></div><button class="primary-button" id="puzzle-button">put us together</button><p class="puzzle-success" id="puzzle-success">DISTANCE CAN’T KEEP US APART. ♡</p></section>
+
+      <section class="countdown section-shell" id="countdown"><div class="countdown-copy reveal"><p class="eyebrow">the best part is coming</p><h2>Until You’re<br /><em>Home</em></h2><p>Counting every minute until the front door opens and everything feels right again.</p></div><div class="countdown-clock reveal reveal-delay"><div><strong id="days">--</strong><span>days</span></div><i>:</i><div><strong id="hours">--</strong><span>hours</span></div><i>:</i><div><strong id="minutes">--</strong><span>minutes</span></div><i>:</i><div><strong id="seconds">--</strong><span>seconds</span></div></div><p class="home-message" id="home-message">until the countdown becomes a memory</p></section>
+    </main>
+    <footer><span>made for my person, with love</span><span>J ♡ A · 2024—forever</span></footer>
+    <div class="modal" id="modal" aria-hidden="true"><div class="modal-card"><button class="modal-close" aria-label="Close">×</button><p class="eyebrow">a little lock</p><h2>Before you open this letter...</h2><p>solve the equation.</p><div class="lock-equation">2 + 2 = <input id="answer" type="number" aria-label="Equation answer" /></div><button class="primary-button" id="unlock">unlock letter</button><p class="unlock-message" id="unlock-message"></p></div></div>
+    <script src="app.js"></script>
+  </body>
+</html>
